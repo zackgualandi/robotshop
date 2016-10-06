@@ -11,10 +11,10 @@ Zackery Gualandi 10/5/2016
 
 using namespace std;
  
-class Robotpart 
+class robotpart 
 {
 	public:
-		void build_part(string partName, int partNum, double partCost, double partCost);
+		void build_part(string partName, int partNum, double partCost, double partWeight);
 		void set_description(string partDescript);
 		string get_name();
 		string get_description();
@@ -28,4 +28,4 @@ class Robotpart
 		int partNumber;
 		double cost;
 		double weight;
-}
+};
