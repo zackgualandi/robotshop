@@ -14,8 +14,8 @@ using namespace std;
 class Robotpart 
 {
 	public:
-		void build_part(string partName, string partDescript, int partNum, double partCost);
-		void set_description();
+		void build_part(string partName, int partNum, double partCost);
+		void set_description(string partDescript);
 		string get_name();
 		string get_description();
 		int get_part_number();
