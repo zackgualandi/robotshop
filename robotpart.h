@@ -22,7 +22,7 @@ class robotpart
 		double get_cost();
 		double get_weight();
 		
-	private:
+	protected:
 		string name;
 		string description;
 		int partNumber;
