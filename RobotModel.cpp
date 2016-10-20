@@ -23,6 +23,11 @@ void RobotModel::define_model(string mName, int mNum)
 	model_number = mNum;
 }
 
+void RobotModel::set_description(string mDescription)
+{
+	model_description = mDescription;
+}
+
 void RobotModel::set_price(double mPrice)
 {
 	model_price = mPrice;
@@ -69,6 +74,11 @@ void RobotModel::build_Torso(string torsoName, int torsoNum, double torsoCost, d
 	model_torso.set_compartments(torsoCompartments);
 }
 
+string RobotModel::get_model_description()
+{
+	return model_description;
+}
+
 string RobotModel::get_model_name()
 {
 	return model_name;
@@ -82,4 +92,9 @@ int RobotModel::get_model_number()
 double RobotModel::get_model_price()
 {
 	return model_price;
+}
+
+double RobotModel::get_model_weight()
+{
+	return model_weight;
 }

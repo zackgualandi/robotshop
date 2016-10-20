@@ -18,7 +18,11 @@ class Menu : public RobotModel
 	public:
 		void Menu::openMainMenu();
 		void Menu::openCreateMenu();
+		void Menu::openBrowseMenu();
+		void Menu::openOrderMenu();
+		void Menu::displayRobotModel(RobotModel selectedModel);
 		void Menu::buildRobotModel(RobotModel selectedModel);
+		void Menu::orderRobotModel(RobotModel selectedModel);
 	private:
 		RobotModel ourModels[maxModels];
 };

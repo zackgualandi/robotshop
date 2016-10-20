@@ -42,7 +42,6 @@ Zackery Gualandi 10/5/2016
  	
  	cout << '\n' << testName << " " << testNumber << " " << testCost << " " << testWeight;
  	cout << '\n' << testDescription;
- 	
 
 	cin.get();
 	return 0;
