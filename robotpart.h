@@ -5,6 +5,8 @@ Zackery Gualandi 10/5/2016
 */
 
 
+#ifndef ROBOTPART_H
+#define ROBOTPART_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -29,3 +31,4 @@ class robotpart
 		double cost;
 		double weight;
 };
+#endif
