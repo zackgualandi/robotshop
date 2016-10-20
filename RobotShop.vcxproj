@@ -97,8 +97,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuTest.cpp" />
+    <ClCompile Include="RobotModel.cpp" />
     <ClCompile Include="robotpart.cpp" />
-    <ClCompile Include="robotpart_test.cpp" />
     <ClCompile Include="Head.cpp" />
     <ClCompile Include="Locomotor.cpp" />
     <ClCompile Include="Battery.cpp" />
@@ -109,6 +111,8 @@
     <ClInclude Include="Head.h" />
     <ClInclude Include="Battery.h" />
     <ClInclude Include="Arm.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="RobotModel.h" />
     <ClInclude Include="Torso.h" />
     <ClInclude Include="Locomotor.h" />
     <ClInclude Include="robotpart.h" />

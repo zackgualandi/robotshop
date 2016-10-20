@@ -5,6 +5,8 @@ Zackery Gualandi 10/5/2016
 */
 
 
+#ifndef TORSO_H
+#define TORSO_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -13,8 +15,9 @@ Zackery Gualandi 10/5/2016
 class Torso : public robotpart
 {
 	public:
-		void Torso::build_Torso(int partCompartments);
+		void Torso::set_compartments(int partCompartments);
 		int Torso::get_Compartments();
 	protected:
 		int batteryCompartments;
 };
+#endif

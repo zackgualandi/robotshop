@@ -12,7 +12,7 @@ Zackery Gualandi 10/5/2016
 
 using namespace std;
 
-void Torso::build_Torso(int partCompartments)
+void Torso::set_compartments(int partCompartments)
 {
 	batteryCompartments = partCompartments;
 }
