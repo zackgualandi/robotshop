@@ -5,6 +5,8 @@ Zackery Gualandi 10/5/2016
 */
 
 
+#ifndef LOCOMOTOR_H
+#define LOCOMOTOR_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -23,3 +25,4 @@ class Locomotor : public robotpart
 		int consumptionRate;
 
 };
+#endif

@@ -5,6 +5,8 @@ Zackery Gualandi 10/5/2016
 */
 
 
+#ifndef HEAD_H
+#define HEAD_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -14,9 +16,6 @@ using namespace std;
 
 class Head: public robotpart
 {
-	public:
-		void Head::build_Head(string partType);
-		string Head::get_type();
-	protected:
-		string type;
+	// head is an empty class as it does not require additional data compared to robot parts, but making the head class simplifies the robot model class.
 };
+#endif

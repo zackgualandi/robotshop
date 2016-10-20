@@ -12,12 +12,17 @@ Zackery Gualandi 10/5/2016
 
 using namespace std;
 
-void Arm::build_Arm(string partType)
+void Arm::set_powerConsumptionRate(int partEnergyConsumption)
 {
-	type = partType;
+	consumptionRate = partEnergyConsumption;
 }
 
-string Arm::get_type()
+int Arm::get_consumtionRate()
 {
-	return type;
+	return consumptionRate;
+}
+
+int Arm::power_consumed(int currentSpeed)
+{
+	return (currentSpeed * consumptionRate);
 }
