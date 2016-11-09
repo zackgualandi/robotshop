@@ -41,7 +41,8 @@ void Menu::openMainMenu()
 
 		else if (input == 'O' || input == 'o')
 		{
-
+			cout << endl << endl;
+			openOrderMenu();
 		}
 
 		else if (input == 'Q' || input == 'q')
@@ -252,7 +253,6 @@ void Menu::buildRobotModel(RobotModel selectedModel)
 	cin.ignore();
 	cout << "Part Description:";
 	getline(cin, inputDescript);
-	cin.ignore();
 	cout << "Arms Energy Consumption Rate:";
 	cin >> inputArmEnergyConsumption;
 	cin.ignore();
@@ -262,8 +262,7 @@ void Menu::buildRobotModel(RobotModel selectedModel)
 
 	cout << endl << "   >Battery<" << endl; // 1-3 identical batteries
 	cout << "Part Name: ";
-	cin >> inputName;
-	cin.ignore();
+	getline(cin, inputName);
 	cout << "Part Model Number:";
 	cin >> inputNumber;
 	cin.ignore();
@@ -275,7 +274,6 @@ void Menu::buildRobotModel(RobotModel selectedModel)
 	cin.ignore();
 	cout << "Part Description:";
 	getline(cin, inputDescript);
-	cin.ignore();
 	cout << "Battery Max Power:";
 	cin >> inputBatteryPower;
 	cin.ignore();
@@ -286,14 +284,12 @@ void Menu::buildRobotModel(RobotModel selectedModel)
 	cout << endl << "   >Overall Model<" << endl;
 	cout << endl << "   >Battery<" << endl; // 1-3 identical batteries
 	cout << "Model Name: ";
-	cin >> inputName;
-	cin.ignore();
+	getline(cin, inputName);
 	cout << "Model Number:";
 	cin >> inputNumber;
 	cin.ignore();
 	cout << "Model Description:";
 	getline(cin, inputDescript);
-	cin.ignore();
 	selectedModel.define_model(inputName, inputNumber);
 	selectedModel.set_description(inputDescript);
 	selectedModel.set_price(totalCost);
